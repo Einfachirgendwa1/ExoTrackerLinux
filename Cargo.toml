@@ -7,6 +7,9 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-win_mem = "0.2.2"
 nalgebra = "0.31.0"
 nannou = "0.18.1"
+
+[target.'cfg(windows)'.dependencies]
+win_mem = "0.2.2"
+
