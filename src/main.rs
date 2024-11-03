@@ -1,11 +1,11 @@
-mod utils;
 mod data_provider;
 mod model;
+mod utils;
 mod view;
 
-use utils::*;
 use crate::model::create_model;
+use utils::*;
 
 fn main() {
-	nannou::app(create_model).run();
+    nannou::app(create_model).run();
 }
